@@ -1,0 +1,22 @@
+{
+  "name": "@plcgi1/fastify-firebase-identity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sdfsdf"
+  },
+  "keywords": [
+    "fastify",
+    "firebase"
+  ],
+  "author": "Alex Nosoff <plcgi1@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fastify-plugin": "^1.6.0"
+  }
+}
