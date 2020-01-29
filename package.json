@@ -17,6 +17,8 @@
   "author": "Alex Nosoff <plcgi1@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "fastify-plugin": "^1.6.0"
+    "fastify-jwt": "^1.2.1",
+    "fastify-plugin": "^1.6.0",
+    "firebase": "^7.7.0"
   }
 }

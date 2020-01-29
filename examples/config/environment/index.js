@@ -34,8 +34,12 @@ const all = {
       ssl: true
     }
   },
-  pgboss: {
-    subscribersPath: process.env.SUBSCRIBERS_PATH || './src/subscribers'
+  firebase: {
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: `${process.env.FIREBASE_PROJECT_ID}.firebaseapp.com`,
+    databaseURL: `https://${process.env.FIREBASE_PROJECT_ID}.firebaseio.com`,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: `${process.env.FIREBASE_PROJECT_ID}.appspot.com`,
   }
 }
 

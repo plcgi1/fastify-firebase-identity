@@ -21,7 +21,11 @@ fastify.setErrorHandler(function (error, request, reply) {
 
     return
   }
+  if (error.code = 'auth/user-not-found') {
+    reply.status(401).send({ message: 'Unknown user' })
 
+    return
+  }
   reply
     .code(statusCode)
     .type('application/json')
@@ -67,6 +71,8 @@ const start = async () => {
     // add this plugin, in real world = require('fastify-firebase-identity', { ... })
     fastify.register(require('../'), {
       // firebase credentials
+      firebase: config.firebase,
+      jwt: config.jwt
     })
 
     await fastify.ready()
